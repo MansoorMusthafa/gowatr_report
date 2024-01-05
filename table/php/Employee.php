@@ -132,8 +132,8 @@ class Employee extends Dbconfig {
 		}	
 	}
 	public function addEmployee(){
-		$insertQuery = "INSERT INTO ".$this->empTable." (time_received,  site_name, power, power_issue, network, iot_1, iot1_issue, iot_2, iot2_issue, images, summary, issue_status ) 
-			VALUES ('".$_POST["time_received"]."', '".$_POST["site_name"]."', '".$_POST["power"]."', '".$_POST["power_issue"]."', '".$_POST["network"]."', '".$_POST["iot_1"]."', '".$_POST["iot1_issue"]."' ,'".$_POST["iot_2"]."', '".$_POST["iot2_issue"]."' , '".$_POST["images"]."' , '".$_POST["summary"]."' , '".$_POST["issue_status"]."')";
+		$insertQuery = "INSERT INTO ".$this->empTable." (time_received,  site_name, power, power_issue, network, network_issue, iot_1, iot1_issue, iot_2, iot2_issue, images, summary, issue_status ) 
+			VALUES ('".$_POST["time_received"]."', '".$_POST["site_name"]."', '".$_POST["power"]."', '".$_POST["power_issue"]."',   '".$_POST["network"]."', '".$_POST["network_issue"]."', '".$_POST["iot_1"]."', '".$_POST["iot1_issue"]."' ,'".$_POST["iot_2"]."', '".$_POST["iot2_issue"]."' , '".$_POST["images"]."' , '".$_POST["summary"]."' , '".$_POST["issue_status"]."')";
 		$isUpdated = mysqli_query($this->dbConnect, $insertQuery);		
 	}
 	public function deleteEmployee(){

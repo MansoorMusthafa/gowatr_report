@@ -57,19 +57,9 @@
     <div class="wrapper">
 
         <header class="main-header">
-            <div class="p-10 clearfix float-left logo-block">
-                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-                    <i class="ti-align-left"></i>
-                </a>
-                <!-- Logo -->
-                <a href="index" class="logo">
-                    <!-- logo-->
-                    <span class="logo-lg">
-                        <img src="images/logo-light-text.png" alt="logo" class="light-logo">
-                        <img src="images/logo-dark-text.png" alt="logo" class="dark-logo">
-                    </span>
-                </a>
-            </div>
+        <div class="">
+              
+              </div>
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top">
                 <!-- Sidebar toggle button-->
