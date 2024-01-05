@@ -26,6 +26,11 @@
     <!-- AIUI Admin skins -->
     <link rel="stylesheet" href="css/skins/_all-skins.css">
 
+    <script defer src="table/js/jquery.dataTables.min.js"></script>
+<script defer src="table/js/dataTables.bootstrap.min.js"></script>		
+<link  rel="stylesheet" href="table/css/dataTables.bootstrap.min.css" />
+<script defer src="table/js/data.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -57,18 +62,8 @@
     <div class="wrapper">
 
         <header class="main-header">
-            <div class="p-10 clearfix float-left logo-block">
-                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-                    <i class="ti-align-left"></i>
-                </a>
-                <!-- Logo -->
-                <a href="index" class="logo">
-                    <!-- logo-->
-                    <span class="logo-lg">
-                        <img src="images/logo-light-text.png" alt="logo" class="light-logo">
-                        <img src="images/logo-dark-text.png" alt="logo" class="dark-logo">
-                    </span>
-                </a>
+            <div class="">
+              
             </div>
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top">
@@ -261,7 +256,7 @@
             <div class="content-header d-none d-md-block">
                 <div class="d-flex align-items-center">
                     <div class="mr-auto">
-                        <h3 class="page-title br-0">Form</h3>
+                        <h3 class="page-title br-0">Request Status</h3>
                     </div>
                     <div class="right-title">
                         <div class="d-flex mt-10 justify-content-end">
@@ -291,111 +286,152 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="box">
-                            <form role="form" class="form-element">
-                                <div class="box-body">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Site Name</label>
-                                                <div class="form-group">
+                            
+                        <div class="container" style="margin-top:30px">
+		<div class="row">
+		
+			
+		            <div class="card">
+                        <table id="employeeList" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Date & Time</th>
+                                    <th>Site</th>
+                                    <th>Power</th>					
+                                    <th>Power Reason</th>					
+                                    <th>Network</th>
+                                    <th>Network Reason</th>
+                                    <th>IoT 1</th>
+                                    <th>IoT 1 Reason </th>
+                                    <th>IoT 1</th>
+                                    <th>IoT 2 Reason </th>
+                                    <th>images</th>					
+                                    <th>summary</th>					
+                                    <th>Status</th>					
+                                   
+                                    <th></th>
+                                    <th></th>					
+                                </tr>
+                            </thead>
+                        </table>
 
-                                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                                        placeholder="Enter Site Name">
-                                                </div>
-                                            </div>
+                        <div id="employeeModal" class="modal fade">
+                            <div class="modal-dialog">
+                                <form method="post" id="employeeForm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title"><i class="fa fa-plus"></i> Edit User</h4>
                                         </div>
-                                        <div class="col">
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                            <label for="name" class="control-label">Date Time</label>
+                                                <input type="text" class="form-control" id="time_received" name="title" placeholder="Name" required>			
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="position" class="control-label">site_name</label>							
+                                                <input type="text" class="form-control" id="site_name" name="site_name" placeholder="site_name">				
+                                                
+                                                <!-- <select name="timing" id="timing" class="form-control" id="exampleFormControlSelect2" required >
+                                                    <option hidden >Select Timing</option>
+                                                    <option value='Full Time'>Full Time</option>
+                                                    <option value='Part Time'>Part Time</option>
+                                                    <option value='ODC'>ODC</option>
+                                                    <option value='Intern'>Intern</option>
+                                                </select> -->
+                                            </div>
+
 
                                             <div class="form-group">
-                                                <label for="exampleInputEmail1">Power Issue</label>
-                                                <select class="form-control">
-                                                    <option hidden>Select</option>
-                                                    <option value="available">Available</option>
-                                                    <option value="not available">Not Available</option>
+                                                <label for="position" class="control-label">power</label>							
+                                                <input type="text" class="form-control" id="power" name="power" placeholder="power">							
+                                            </div>	  
 
-                                                </select>
+                                            <div class="form-group">
+                                                <label for="lastname" class="control-label">Power Reason</label>							
+                                                <input type="text" class="form-control"  id="power_issue" name="power_issue" placeholder="power_issue" required>							
+                                            </div>	 
+
+                                            <div class="form-group">
+                                                <label for="years" class="control-label">Network</label>		
+                                                <input type="text" class="form-control" id="network" name="network" placeholder="Network">	
                                             </div>
-                                        </div>
 
+
+                                            <div class="form-group">
+                                                <label for="years" class="control-label">Network_issue</label>		
+                                                <input type="text" class="form-control" id="network_issue" name="network_issue" placeholder="Network_issue">
+                                                <!-- <select  id="gender" name="gender" class="form-control" id="exampleFormControlSelect2" required >
+                                                    <option hidden >Select Gender</option>
+                                                    <option value='Male'>Male</option>
+                                                    <option value='Female'>Female</option>
+                                                    <option value='others'>others</option>
+                                                </select> -->
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="lastname" class="control-label">IoT 1</label>		
+                                                <input type="text" class="form-control" id="iot_1" name="iot_1" placeholder="iot_1">		
+                                            </div>			
+
+                                            <div class="form-group">
+                                                <label for="years" class="control-label">Salary From</label>		
+                                                <input type="text" class="form-control" id="iot1_issue" name="iot1_issue" placeholder="iot1_issue">	
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="years" class="control-label">Salary to</label>		
+                                                <input type="text" class="form-control" id="iot_2" name="iot_2" placeholder="iot_2">	
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label for="Tag1" class="control-label">Tag 1</label>		
+                                                <input type="text" class="form-control" id="iot2_issue" name="iot2_issue" placeholder="iot2_issue">	
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="Tag2 " class="control-label">images</label>		
+                                                <input type="text" class="form-control" id="images" name="images" placeholder="images">	
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="Tag2 " class="control-label">summary</label>		
+                                                <input type="text" class="form-control" id="summary" name="summary" placeholder="summary">
+                                                
+                                                <!-- <select id="job_status" name="job_status" class="form-control" id="exampleFormControlSelect2" required >
+                                                    <option hidden >Select Status</option>
+                                                    <option value='Open'>Open</option>
+                                                    <option value='Closed'>Closed</option>
+                                                    <option value='On Hold'>On Hold</option>
+                                                    </select> -->
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Tag2 " class="control-label">issue_status</label>		
+                                                <input type="text" class="form-control" id="issue_status" name="issue_status" placeholder="issue_status">
+                                                
+                                            
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <input type="hidden" name="id" id="id" />
+                                            <input type="hidden" name="action" id="action" value="" />
+                                            <input type="submit" name="save" id="save" class="btn btn-info" value="Save" />
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
                                     </div>
+                                </form>
+                            </div>
+                        </div>
+		            </div>
+        </div>
 
-                                    <div class="col-sm">
-                                        <div class="beside">
-                                            <label for="power1">Power Availability</label> <br>
-                                            <select name="power" id="power1" onchange="toggleTextarea1('power1')">
-                                                <option class="d-none">Select</option>
-                                                <option value="available">Available</option>
-                                                <option value="not available">Not Available</option>
-                                            </select>
-                                        </div>
-                                        <!-- <div id="reasonTextarea1" class="beside">
-                                    <textarea id="reason" placeholder="Reason"></textarea>
-                                </div> -->
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Network Issue</label>
-                                                <select class="form-control">
-                                                    <option hidden>Select</option>
-                                                    <option value="available">Available</option>
-                                                    <option value="not available">Not Available</option>
-
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">IoT 1 Issue</label>
-                                                <select class="form-control">
-                                                    <option hidden>Select</option>
-                                                    <option value="working">Working</option>
-                                                    <option value="not working">Not working</option>
-
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">IoT 2 Issue</label>
-                                                <select class="form-control">
-                                                    <option hidden>Select</option>
-                                                    <option value="working">Working</option>
-                                                    <option value="not working">Not working</option>
-
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-
-                                            <div class="form-group">
-                                                <label for="exampleInputFile">File input</label>
-                                                <input type="file" id="exampleInputFile">
-
-
-                                            </div>
-                                        </div>
-
-                                    </div>
+        </div>
 
 
 
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="basic_checkbox_1">
-                                        <label for="basic_checkbox_1">Check me out</label>
-                                    </div>
-                                </div>
-                                <div class="box-footer">
-                                    <button type="submit" class="btn btn-danger">Submit</button>
-                                </div>
-                            </form>
-                            <!-- /.box-body -->
+
                         </div>
                     </div>
                 </div>
@@ -404,19 +440,7 @@
         </div>
         <!-- /.content-wrapper -->
 
-        <footer class="main-footer">
-            <div class="pull-right d-none d-sm-inline-block">
-                <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Purchase Now</a>
-                    </li>
-                </ul>
-            </div> &copy; 2019 <a href="https://www.multipurposethemes.com/">Multi-Purpose Themes</a>. All Rights
-            Reserved.
-        </footer>
+
         <!-- Control Sidebar -->
       
         <!-- /.control-sidebar -->
