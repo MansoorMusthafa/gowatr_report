@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from aiui-admin.wordpressthemeshub.com/main/fullscreen.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jan 2024 11:41:44 GMT -->
 
 <head>
     <meta charset="utf-8">
@@ -763,6 +762,5 @@
 
 </body>
 
-<!-- Mirrored from aiui-admin.wordpressthemeshub.com/main/fullscreen.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jan 2024 11:41:45 GMT -->
 
 </html>
