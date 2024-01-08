@@ -66,7 +66,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="index.html"><i class="mdi mdi-resize-bottom-right"></i>Dashboard 1</a></li>
+            <li><a href="index.html"><i class="mdi mdi-resize-bottom-right"></i>Dashboard</a></li>
             <li><a href="index2.html"><i class="mdi mdi-resize-bottom-right"></i>Dashboard 2</a></li>
             <li><a href="index3.html"><i class="mdi mdi-resize-bottom-right"></i>Dashboard 3</a></li>
           </ul>
