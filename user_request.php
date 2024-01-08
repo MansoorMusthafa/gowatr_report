@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from aiui-admin.wordpressthemeshub.com/main/fullscreen.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jan 2024 11:41:44 GMT -->
+
 
 <head>
     <meta charset="utf-8">
@@ -14,42 +14,156 @@
     <title>Report</title>
 
     <!-- Bootstrap 4.0-->
-    <link rel="stylesheet" href="assets/vendor_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/vendor_components/bootstrap/dist/css/bootstrap.min.css">
 
     <!-- Bootstrap extend-->
 
-    <link rel="stylesheet" href="css/bootstrap-extend.css">
+    <link rel="stylesheet" href="./css/bootstrap-extend.css">
 
     <!-- Theme style -->
-    <link rel="stylesheet" href="css/master_style.css">
+    <link rel="stylesheet" href="./css/master_style.css">
 
     <!-- AIUI Admin skins -->
-    <link rel="stylesheet" href="css/skins/_all-skins.css">
+    <link rel="stylesheet" href="./css/skins/_all-skins.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+
 
 </head>
 <style>
-#reasonTextarea1 {
-    display: none;
-}
+    .beside {
+        margin-bottom: 20px;
+    }
 
-#reasonTextarea2 {
-    display: none;
-}
+    #reasonTextarea1 {
+        display: none;
+    }
 
-#reasonTextarea3 {
-    display: none;
-}
+    #reasonTextarea2 {
+        display: none;
+    }
 
-#reasonTextarea4 {
-    display: none;
-}
+    #reasonTextarea3 {
+        display: none;
+    }
+
+    #reasonTextarea4 {
+        display: none;
+    }
+
+    #reasonTextarea5 {
+        display: none;
+    }
+
+    #reasonTextarea6 {
+        display: none;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    textarea {
+        border: none;
+        border-bottom: 1px solid #277c8d;
+        background: #ffffff00;
+        outline: none;
+        margin: 8px 0;
+        padding: 5px 0;
+        width: 100%;
+        color: #277c8d;
+    }
+
+    ::placeholder {
+        color: #277c8d;
+        opacity: 1;
+        /* Firefox */
+    }
+
+    ::-ms-input-placeholder {
+        /* Edge 12 -18 */
+        color: rgb(104, 185, 255);
+    }
+
+    .take_pic {
+        background-color: none !important;
+        border: none;
+        background: none;
+
+
+    }
+
+    .imageThumb {
+        max-height: 75px;
+        border: 2px solid;
+        padding: 1px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .pip {
+        display: inline-block;
+        margin: 10px 10px 0 0;
+        position: relative;
+
+
+    }
+
+    .remove {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        background: #fed000;
+        /* border: 1px solid black; */
+        color: #000080;
+        text-align: center;
+        cursor: pointer;
+        padding: 1px 6px;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 10px;
+    }
+
+    .remove:hover {
+        background: white;
+        color: black;
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid #266776;
+        background: #ffffff00;
+        outline: none;
+        margin: 8px 0;
+        padding: 5px 0;
+        width: 100%;
+        color: #277c8d;
+
+
+    }
+
+    input:hover {
+        background: #ffffff3d;
+        cursor: pointer;
+    }
+
+    .form-control-2 {
+        background: none !important;
+        border: none !important;
+        border-bottom: 1px solid #266776 !important;
+        border-radius: 0px !important;
+        margin-top: 6px;
+    }
+
+    .take_pic {
+        background-color: none !important;
+        border: none;
+        background: none;
+
+
+    }
+
+ 
 </style>
 
 <body class="hold-transition skin-black light-sidebar sidebar-mini">
@@ -57,9 +171,22 @@
     <div class="wrapper">
 
         <header class="main-header">
-        <div class="">
-              
-              </div>
+            <div class="p-10 clearfix float-left logo-block">
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <!-- <i class="ti-align-left"  style="background-color: red; color: yellow">></i> -->
+                    <svg style="color: black;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </a>
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <!-- logo-->
+                    <span class="logo-lg">
+                        <!-- <img src="./images/logo-light-text.png" alt="logo" class="light-logo">
+                        <img src="./images/logo-dark-text.png" alt="logo" class="dark-logo"> -->
+                    </span>
+                </a>
+            </div>
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top">
                 <!-- Sidebar toggle button-->
@@ -67,15 +194,13 @@
                     <ul class="header-megamenu nav">
 
                         <li class="dropdown nav-item">
-                            <a href="#" aria-haspopup="true" data-toggle="dropdown" class="nav-link rounded"
-                                aria-expanded="false">
+                            <a href="#" aria-haspopup="true" data-toggle="dropdown" class="nav-link rounded" aria-expanded="false">
                                 <i class="nav-link-icon fa fa-cogs mx-5 text-white"></i>
                                 Projects
                                 <i class="fa fa-angle-down ml-2"></i>
                             </a>
                             <div class="dropdown-menu">
-                                <div class="dropdown-menu-header-inner bg-img"
-                                    style="background-image: url('images/gallery/landscape1.jpg');" data-overlay="5">
+                                <div class="dropdown-menu-header-inner bg-img" style="background-image: url('images/gallery/landscape1.jpg');" data-overlay="5">
                                     <div class="p-30 text-left w-250">
                                         <h5 class="text-white">Overview</h5>
                                         <h6 class="text-white">Unlimited options</h6>
@@ -88,22 +213,12 @@
                                     </div>
                                 </div>
                                 <div class="p-10">
-                                    <button type="button"
-                                        class="btn btn-outline btn-flat btn-primary w-p100 text-left"><i
-                                            class="fa fa-folder mr-10"> </i>Graphic Design</button>
-                                    <button type="button"
-                                        class="btn btn-outline btn-flat btn-primary w-p100 text-left"><i
-                                            class="fa fa-folder mr-10"> </i>App Development</button>
-                                    <button type="button"
-                                        class="btn btn-outline btn-flat btn-primary w-p100 text-left"><i
-                                            class="fa fa-folder mr-10"> </i>Icon Design</button>
+                                    <button type="button" class="btn btn-outline btn-flat btn-primary w-p100 text-left"><i class="fa fa-folder mr-10"> </i>Graphic Design</button>
+                                    <button type="button" class="btn btn-outline btn-flat btn-primary w-p100 text-left"><i class="fa fa-folder mr-10"> </i>App Development</button>
+                                    <button type="button" class="btn btn-outline btn-flat btn-primary w-p100 text-left"><i class="fa fa-folder mr-10"> </i>Icon Design</button>
                                     <div tabindex="-1" class="dropdown-divider"></div>
-                                    <button type="button"
-                                        class="btn btn-outline btn-flat btn-primary w-p100 text-left"><i
-                                            class="fa fa-folder mr-10"> </i>Miscellaneous</button>
-                                    <button type="button"
-                                        class="btn btn-outline btn-flat btn-primary w-p100 text-left"><i
-                                            class="fa fa-folder mr-10"> </i>Frontend Dev</button>
+                                    <button type="button" class="btn btn-outline btn-flat btn-primary w-p100 text-left"><i class="fa fa-folder mr-10"> </i>Miscellaneous</button>
+                                    <button type="button" class="btn btn-outline btn-flat btn-primary w-p100 text-left"><i class="fa fa-folder mr-10"> </i>Frontend Dev</button>
                                 </div>
                             </div>
                         </li>
@@ -126,8 +241,7 @@
                                             <!-- start message -->
                                             <a href="#">
                                                 <div class="pull-left">
-                                                    <img src="images/user2-160x160.jpg" class="rounded-circle"
-                                                        alt="User Image">
+                                                    <img src="./images/user2-160x160.jpg" class="rounded-circle" alt="User Image">
                                                 </div>
                                                 <div class="mail-contnet">
                                                     <h4>
@@ -143,8 +257,7 @@
                                         <li>
                                             <a href="#">
                                                 <div class="pull-left">
-                                                    <img src="images/user3-128x128.jpg" class="rounded-circle"
-                                                        alt="User Image">
+                                                    <img src="./images/user3-128x128.jpg" class="rounded-circle" alt="User Image">
                                                 </div>
                                                 <div class="mail-contnet">
                                                     <h4>
@@ -158,8 +271,7 @@
                                         <li>
                                             <a href="#">
                                                 <div class="pull-left">
-                                                    <img src="images/user4-128x128.jpg" class="rounded-circle"
-                                                        alt="User Image">
+                                                    <img src="./images/user4-128x128.jpg" class="rounded-circle" alt="User Image">
                                                 </div>
                                                 <div class="mail-contnet">
                                                     <h4>
@@ -174,8 +286,7 @@
                                         <li>
                                             <a href="#">
                                                 <div class="pull-left">
-                                                    <img src="images/user3-128x128.jpg" class="rounded-circle"
-                                                        alt="User Image">
+                                                    <img src="./images/user3-128x128.jpg" class="rounded-circle" alt="User Image">
                                                 </div>
                                                 <div class="mail-contnet">
                                                     <h4>
@@ -190,8 +301,7 @@
                                         <li>
                                             <a href="#">
                                                 <div class="pull-left">
-                                                    <img src="images/user4-128x128.jpg" class="rounded-circle"
-                                                        alt="User Image">
+                                                    <img src="./images/user4-128x128.jpg" class="rounded-circle" alt="User Image">
                                                 </div>
                                                 <div class="mail-contnet">
                                                     <h4>
@@ -210,7 +320,7 @@
                         <!-- User Account-->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="images/avatar/avatar.png" class="img-fluid" alt="" />
+                                <img src="./images/avatar/avatar.png" class="img-fluid" alt="" />
                             </a>
                             <ul class="dropdown-menu scale-up">
                                 <!-- Menu Body -->
@@ -219,8 +329,7 @@
                                         Profile</a>
                                     <a class="dropdown-item" href="javascript:void(0)"><i class="ion ion-bag"></i> My
                                         Balance</a>
-                                    <a class="dropdown-item" href="javascript:void(0)"><i
-                                            class="ion ion-email-unread"></i> Inbox</a>
+                                    <a class="dropdown-item" href="javascript:void(0)"><i class="ion ion-email-unread"></i> Inbox</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="javascript:void(0)"><i class="ion ion-settings"></i>
                                         Account Setting</a>
@@ -247,40 +356,7 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <div class="content-header d-none d-md-block">
-                <div class="d-flex align-items-center">
-                    <div class="mr-auto">
-                        <h3 class="page-title br-0">Form</h3>
-                    </div>
-                    <div class="right-title">
-                        <div class="d-flex mt-10 justify-content-end">
-                            <div class="d-md-flex mr-20 ml-10 d-none">
-                                <div class="chart-text mr-10">
-                                    <p class="mb-0 font-size-12">THIS MONTH</p>
-                                    <h4 class="my-0 text-primary">$12,125</h4>
-                                </div>
-                                <div class="spark-chart">
-                                    <div id="thismonth"><canvas width="60" height="35"
-                                            style="display: inline-block; width: 60px; height: 35px; vertical-align: top;"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-md-flex ml-10 d-none">
-                                <div class="chart-text mr-10">
-                                    <p class="mb-0 font-size-12">LAST YEAR</p>
-                                    <h4 class="my-0 text-danger">$22,754</h4>
-                                </div>
-                                <div class="spark-chart">
-                                    <div id="lastyear"><canvas width="60" height="35"
-                                            style="display: inline-block; width: 60px; height: 35px; vertical-align: top;"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
             <!-- Main content -->
             <section class="content">
@@ -296,107 +372,106 @@
                             <form role="form" class="form-element">
                                 <div class="box-body">
                                     <div class="row">
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Site Name</label>
-                                                <div class="form-group">
 
-                                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                                        placeholder="Enter Site Name">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
+                                        <div class="col-sm-12 col-md-6">
 
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Power Issue</label>
-                                                <select class="form-control">
+                                            <div class="form-group beside">
+                                                <label for="power1">Power Issue</label>
+                                                <select id="power1" class="form-control" onchange="toggleTextarea1('power1')">
                                                     <option hidden>Select</option>
                                                     <option value="available">Available</option>
-                                                    <option value="not available">Not Available</option>
+                                                    <option value="Not Available">Not Available</option>
 
                                                 </select>
                                             </div>
+                                            <div id="reasonTextarea1" class="beside">
+                                                <textarea style="resize: none;" id="reason" placeholder="Reason"></textarea>
+                                            </div>
                                         </div>
 
-                                    </div>
 
-                                    <div class="col-sm">
-                                        <div class="beside">
-                                            <label for="power1">Power Availability</label> <br>
-                                            <select name="power" id="power1" onchange="toggleTextarea1('power1')">
-                                                <option class="d-none">Select</option>
-                                                <option value="available">Available</option>
-                                                <option value="not available">Not Available</option>
-                                            </select>
-                                        </div>
-                                        <!-- <div id="reasonTextarea1" class="beside">
-                                    <textarea id="reason" placeholder="Reason"></textarea>
-                                </div> -->
-                                    </div>
 
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="form-group">
+
+
+
+                                        <div class="col-sm-12 col-md-6">
+                                            <div class="form-group beside">
                                                 <label for="exampleInputEmail1">Network Issue</label>
-                                                <select class="form-control">
+                                                <select id="power2" class="form-control" onchange="toggleTextarea2('power2')">
                                                     <option hidden>Select</option>
                                                     <option value="available">Available</option>
-                                                    <option value="not available">Not Available</option>
+                                                    <option value="Not Available">Not Available</option>
 
                                                 </select>
                                             </div>
+                                            <div id="reasonTextarea2" class="beside">
+                                                <textarea style="resize: none;" id="reason" placeholder="Reason"></textarea>
+                                            </div>
                                         </div>
-                                        <div class="col">
-                                            <div class="form-group">
+                                        <div class="col-sm-12 col-md-6">
+                                            <div class="form-group beside">
                                                 <label for="exampleInputEmail1">IoT 1 Issue</label>
-                                                <select class="form-control">
+                                                <select id="power3" class="form-control" onchange="toggleTextarea3('power3')">
                                                     <option hidden>Select</option>
                                                     <option value="working">Working</option>
-                                                    <option value="not working">Not working</option>
+                                                    <option value="Not working">Not working</option>
 
                                                 </select>
                                             </div>
+                                            <div id="reasonTextarea3" class="beside">
+                                                <textarea style="resize: none;" id="reason" placeholder="Reason"></textarea>
+                                            </div>
                                         </div>
 
-                                    </div>
 
 
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="form-group">
+
+                                        <div class="col-sm-12 col-md-6">
+                                            <div class="form-group beside">
                                                 <label for="exampleInputEmail1">IoT 2 Issue</label>
-                                                <select class="form-control">
+                                                <select id="power4" class="form-control" onchange="toggleTextarea4('power4')">
                                                     <option hidden>Select</option>
                                                     <option value="working">Working</option>
-                                                    <option value="not working">Not working</option>
+                                                    <option value="Not working">Not working</option>
 
                                                 </select>
                                             </div>
+                                            <div id="reasonTextarea4" class="beside">
+                                                <textarea style="resize: none;" id="reason" placeholder="Reason"></textarea>
+                                            </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-sm-12 col-md-12 ">
 
-                                            <div class="form-group">
-                                                <label for="exampleInputFile">File input</label>
-                                                <input type="file" id="exampleInputFile">
+
+
+                                            <div class="col-sm d-flex align-items-center justify-content-center image_container">
+                                                <div class="field">
+                                                    <label for="files" style="cursor: pointer">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-up-fill" viewBox="0 0 16 16">
+                                                            <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z" />
+                                                        </svg>
+                                                        Upload Files
+                                                    </label>
+
+                                                </div>
 
 
                                             </div>
+                                            <input style="display: none" type="file" id="files" multiple />
+
                                         </div>
 
+
                                     </div>
 
 
 
-                                    <div class="checkbox">
-                                        <input type="checkbox" id="basic_checkbox_1">
-                                        <label for="basic_checkbox_1">Check me out</label>
-                                    </div>
                                 </div>
                                 <div class="box-footer">
                                     <button type="submit" class="btn btn-danger">Submit</button>
                                 </div>
                             </form>
+
                             <!-- /.box-body -->
                         </div>
                     </div>
@@ -420,263 +495,7 @@
             Reserved.
         </footer>
         <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-light">
-            <div class="rpanel-title"><span class="btn pull-right"><i class="ion ion-close"
-                        data-toggle="control-sidebar"></i></span> </div>
-            <!-- Create the tabs -->
-            <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-                <li class="nav-item"><a href="#control-sidebar-home-tab" data-toggle="tab" class="active">Chat</a></li>
-                <li class="nav-item"><a href="#control-sidebar-settings-tab" data-toggle="tab">Todo</a></li>
-            </ul>
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div class="tab-pane active" id="control-sidebar-home-tab">
-                    <div class="flexbox">
-                        <a href="javascript:void(0)" class="text-grey">
-                            <i class="ti-more"></i>
-                        </a>
-                        <p>Users</p>
-                        <a href="javascript:void(0)" class="text-right text-grey"><i class="ti-plus"></i></a>
-                    </div>
-                    <div class="lookup lookup-sm lookup-right d-none d-lg-block">
-                        <input type="text" name="s" placeholder="Search" class="w-p100">
-                    </div>
-                    <div class="media-list media-list-hover mt-20">
-                        <div class="media py-10 px-0">
-                            <a class="avatar avatar-lg status-success" href="#">
-                                <img src="images/avatar/1.jpg" alt="...">
-                            </a>
-                            <div class="media-body">
-                                <p class="font-size-16">
-                                    <a class="hover-primary" href="#"><strong>Tyler</strong></a>
-                                </p>
-                                <p>Praesent tristique diam...</p>
-                                <span>Just now</span>
-                            </div>
-                        </div>
 
-                        <div class="media py-10 px-0">
-                            <a class="avatar avatar-lg status-danger" href="#">
-                                <img src="images/avatar/2.jpg" alt="...">
-                            </a>
-                            <div class="media-body">
-                                <p class="font-size-16">
-                                    <a class="hover-primary" href="#"><strong>Luke</strong></a>
-                                </p>
-                                <p>Cras tempor diam ...</p>
-                                <span>33 min ago</span>
-                            </div>
-                        </div>
-
-                        <div class="media py-10 px-0">
-                            <a class="avatar avatar-lg status-warning" href="#">
-                                <img src="images/avatar/3.jpg" alt="...">
-                            </a>
-                            <div class="media-body">
-                                <p class="font-size-16">
-                                    <a class="hover-primary" href="#"><strong>Evan</strong></a>
-                                </p>
-                                <p>In posuere tortor vel...</p>
-                                <span>42 min ago</span>
-                            </div>
-                        </div>
-
-                        <div class="media py-10 px-0">
-                            <a class="avatar avatar-lg status-primary" href="#">
-                                <img src="images/avatar/4.jpg" alt="...">
-                            </a>
-                            <div class="media-body">
-                                <p class="font-size-16">
-                                    <a class="hover-primary" href="#"><strong>Evan</strong></a>
-                                </p>
-                                <p>In posuere tortor vel...</p>
-                                <span>42 min ago</span>
-                            </div>
-                        </div>
-
-                        <div class="media py-10 px-0">
-                            <a class="avatar avatar-lg status-success" href="#">
-                                <img src="images/avatar/1.jpg" alt="...">
-                            </a>
-                            <div class="media-body">
-                                <p class="font-size-16">
-                                    <a class="hover-primary" href="#"><strong>Tyler</strong></a>
-                                </p>
-                                <p>Praesent tristique diam...</p>
-                                <span>Just now</span>
-                            </div>
-                        </div>
-
-                        <div class="media py-10 px-0">
-                            <a class="avatar avatar-lg status-danger" href="#">
-                                <img src="images/avatar/2.jpg" alt="...">
-                            </a>
-                            <div class="media-body">
-                                <p class="font-size-16">
-                                    <a class="hover-primary" href="#"><strong>Luke</strong></a>
-                                </p>
-                                <p>Cras tempor diam ...</p>
-                                <span>33 min ago</span>
-                            </div>
-                        </div>
-
-                        <div class="media py-10 px-0">
-                            <a class="avatar avatar-lg status-warning" href="#">
-                                <img src="images/avatar/3.jpg" alt="...">
-                            </a>
-                            <div class="media-body">
-                                <p class="font-size-16">
-                                    <a class="hover-primary" href="#"><strong>Evan</strong></a>
-                                </p>
-                                <p>In posuere tortor vel...</p>
-                                <span>42 min ago</span>
-                            </div>
-                        </div>
-
-                        <div class="media py-10 px-0">
-                            <a class="avatar avatar-lg status-primary" href="#">
-                                <img src="images/avatar/4.jpg" alt="...">
-                            </a>
-                            <div class="media-body">
-                                <p class="font-size-16">
-                                    <a class="hover-primary" href="#"><strong>Evan</strong></a>
-                                </p>
-                                <p>In posuere tortor vel...</p>
-                                <span>42 min ago</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="tab-pane" id="control-sidebar-settings-tab">
-                    <div class="flexbox">
-                        <a href="javascript:void(0)" class="text-grey">
-                            <i class="ti-more"></i>
-                        </a>
-                        <p>Todo List</p>
-                        <a href="javascript:void(0)" class="text-right text-grey"><i class="ti-plus"></i></a>
-                    </div>
-                    <ul class="todo-list mt-20">
-                        <li class="py-15 px-5 by-1">
-                            <!-- checkbox -->
-                            <input type="checkbox" id="basic_checkbox_1" class="filled-in">
-                            <label for="basic_checkbox_1" class="mb-0 h-15"></label>
-                            <!-- todo text -->
-                            <span class="text-line">Nulla vitae purus</span>
-                            <!-- Emphasis label -->
-                            <small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
-                            <!-- General tools such as edit or delete-->
-                            <div class="tools">
-                                <i class="fa fa-edit"></i>
-                                <i class="fa fa-trash-o"></i>
-                            </div>
-                        </li>
-                        <li class="py-15 px-5">
-                            <!-- checkbox -->
-                            <input type="checkbox" id="basic_checkbox_2" class="filled-in">
-                            <label for="basic_checkbox_2" class="mb-0 h-15"></label>
-                            <span class="text-line">Phasellus interdum</span>
-                            <small class="badge bg-info"><i class="fa fa-clock-o"></i> 4 hours</small>
-                            <div class="tools">
-                                <i class="fa fa-edit"></i>
-                                <i class="fa fa-trash-o"></i>
-                            </div>
-                        </li>
-                        <li class="py-15 px-5 by-1">
-                            <!-- checkbox -->
-                            <input type="checkbox" id="basic_checkbox_3" class="filled-in">
-                            <label for="basic_checkbox_3" class="mb-0 h-15"></label>
-                            <span class="text-line">Quisque sodales</span>
-                            <small class="badge bg-warning"><i class="fa fa-clock-o"></i> 1 day</small>
-                            <div class="tools">
-                                <i class="fa fa-edit"></i>
-                                <i class="fa fa-trash-o"></i>
-                            </div>
-                        </li>
-                        <li class="py-15 px-5">
-                            <!-- checkbox -->
-                            <input type="checkbox" id="basic_checkbox_4" class="filled-in">
-                            <label for="basic_checkbox_4" class="mb-0 h-15"></label>
-                            <span class="text-line">Proin nec mi porta</span>
-                            <small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 days</small>
-                            <div class="tools">
-                                <i class="fa fa-edit"></i>
-                                <i class="fa fa-trash-o"></i>
-                            </div>
-                        </li>
-                        <li class="py-15 px-5 by-1">
-                            <!-- checkbox -->
-                            <input type="checkbox" id="basic_checkbox_5" class="filled-in">
-                            <label for="basic_checkbox_5" class="mb-0 h-15"></label>
-                            <span class="text-line">Maecenas scelerisque</span>
-                            <small class="badge bg-primary"><i class="fa fa-clock-o"></i> 1 week</small>
-                            <div class="tools">
-                                <i class="fa fa-edit"></i>
-                                <i class="fa fa-trash-o"></i>
-                            </div>
-                        </li>
-                        <li class="py-15 px-5">
-                            <!-- checkbox -->
-                            <input type="checkbox" id="basic_checkbox_6" class="filled-in">
-                            <label for="basic_checkbox_6" class="mb-0 h-15"></label>
-                            <span class="text-line">Vivamus nec orci</span>
-                            <small class="badge bg-info"><i class="fa fa-clock-o"></i> 1 month</small>
-                            <div class="tools">
-                                <i class="fa fa-edit"></i>
-                                <i class="fa fa-trash-o"></i>
-                            </div>
-                        </li>
-                        <li class="py-15 px-5 by-1">
-                            <!-- checkbox -->
-                            <input type="checkbox" id="basic_checkbox_7" class="filled-in">
-                            <label for="basic_checkbox_7" class="mb-0 h-15"></label>
-                            <!-- todo text -->
-                            <span class="text-line">Nulla vitae purus</span>
-                            <!-- Emphasis label -->
-                            <small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
-                            <!-- General tools such as edit or delete-->
-                            <div class="tools">
-                                <i class="fa fa-edit"></i>
-                                <i class="fa fa-trash-o"></i>
-                            </div>
-                        </li>
-                        <li class="py-15 px-5">
-                            <!-- checkbox -->
-                            <input type="checkbox" id="basic_checkbox_8" class="filled-in">
-                            <label for="basic_checkbox_8" class="mb-0 h-15"></label>
-                            <span class="text-line">Phasellus interdum</span>
-                            <small class="badge bg-info"><i class="fa fa-clock-o"></i> 4 hours</small>
-                            <div class="tools">
-                                <i class="fa fa-edit"></i>
-                                <i class="fa fa-trash-o"></i>
-                            </div>
-                        </li>
-                        <li class="py-15 px-5 by-1">
-                            <!-- checkbox -->
-                            <input type="checkbox" id="basic_checkbox_9" class="filled-in">
-                            <label for="basic_checkbox_9" class="mb-0 h-15"></label>
-                            <span class="text-line">Quisque sodales</span>
-                            <small class="badge bg-warning"><i class="fa fa-clock-o"></i> 1 day</small>
-                            <div class="tools">
-                                <i class="fa fa-edit"></i>
-                                <i class="fa fa-trash-o"></i>
-                            </div>
-                        </li>
-                        <li class="py-15 px-5">
-                            <!-- checkbox -->
-                            <input type="checkbox" id="basic_checkbox_10" class="filled-in">
-                            <label for="basic_checkbox_10" class="mb-0 h-15"></label>
-                            <span class="text-line">Proin nec mi porta</span>
-                            <small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 days</small>
-                            <div class="tools">
-                                <i class="fa fa-edit"></i>
-                                <i class="fa fa-trash-o"></i>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </aside>
         <!-- /.control-sidebar -->
 
         <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
@@ -686,83 +505,113 @@
 
 
     <!-- jQuery 3 -->
-    <script src="assets/vendor_components/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="./assets/vendor_components/jquery-3.3.1/jquery-3.3.1.min.js"></script>
 
     <!-- popper -->
-    <script src="assets/vendor_components/popper/dist/popper.min.js"></script>
+    <script src="./assets/vendor_components/popper/dist/popper.min.js"></script>
 
     <!-- Bootstrap 4.0-->
-    <script src="assets/vendor_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/vendor_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- SlimScroll -->
-    <script src="assets/vendor_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="./assets/vendor_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 
     <!-- FastClick -->
-    <script src="assets/vendor_components/fastclick/lib/fastclick.js"></script>
+    <script src="./assets/vendor_components/fastclick/lib/fastclick.js"></script>
 
     <!-- Sparkline -->
-    <script src="assets/vendor_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <script src="./assets/vendor_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
 
     <!-- fullscreen -->
-    <script src="assets/vendor_components/screenfull/screenfull.js"></script>
+    <script src="./assets/vendor_components/screenfull/screenfull.js"></script>
 
     <!-- AIUI Admin App -->
-    <script src="js/template.js"></script>
+    <!-- <script src="js/template.js"></script> -->
+    <script src="./main/js/template.js"></script>
 
-    <script src="js/pages/fullscreen.js"></script>
+    <!-- <script src="js/pages/fullscreen.js"></script> -->
+    <script src="./main/js/formReason.js"></script>
     <!-- <script src="D:\xampp\htdocs\git_report\main\js\formReason.js"></script> -->
     <script>
-    function toggleTextarea1(powerId) {
-        const selectedOption = document.getElementById(powerId).value;
-        const reasonTextarea = document.getElementById('reasonTextarea1');
+        function toggleTextarea1(powerId) {
+            const selectedOption = document.getElementById(powerId).value;
+            const reasonTextarea = document.getElementById('reasonTextarea1');
 
-        if (selectedOption === 'Not Available') {
-            reasonTextarea.style.display = 'block';
-        } else {
-            reasonTextarea.style.display = 'none';
+            if (selectedOption === 'Not Available') {
+                reasonTextarea.style.display = 'block';
+            } else {
+                reasonTextarea.style.display = 'none';
+            }
         }
-    }
 
 
-    function toggleTextarea2(powerId) {
-        const selectedOption = document.getElementById(powerId).value;
-        const reasonTextarea = document.getElementById('reasonTextarea2');
+        function toggleTextarea2(powerId) {
+            const selectedOption = document.getElementById(powerId).value;
+            const reasonTextarea = document.getElementById('reasonTextarea2');
 
-        if (selectedOption === 'Not Available') {
-            reasonTextarea.style.display = 'block';
-        } else {
-            reasonTextarea.style.display = 'none';
+            if (selectedOption === 'Not Available') {
+                reasonTextarea.style.display = 'block';
+            } else {
+                reasonTextarea.style.display = 'none';
+            }
         }
-    }
 
-    function toggleTextarea3(powerId) {
-        const selectedOption = document.getElementById(powerId).value;
-        const reasonTextarea = document.getElementById('reasonTextarea3');
+        function toggleTextarea3(powerId) {
+            const selectedOption = document.getElementById(powerId).value;
+            const reasonTextarea = document.getElementById('reasonTextarea3');
 
-        if (selectedOption === 'Not Available') {
-            reasonTextarea.style.display = 'block';
-        } else {
-            reasonTextarea.style.display = 'none';
+            if (selectedOption === 'Not working') {
+                reasonTextarea.style.display = 'block';
+            } else {
+                reasonTextarea.style.display = 'none';
+            }
         }
-    }
 
 
-    function toggleTextarea4(powerId) {
-        const selectedOption = document.getElementById(powerId).value;
-        const reasonTextarea = document.getElementById('reasonTextarea4');
+        function toggleTextarea4(powerId) {
+            const selectedOption = document.getElementById(powerId).value;
+            const reasonTextarea = document.getElementById('reasonTextarea4');
 
-        if (selectedOption === 'Not Available') {
-            reasonTextarea.style.display = 'block';
-        } else {
-            reasonTextarea.style.display = 'none';
+            if (selectedOption === 'Not working') {
+                reasonTextarea.style.display = 'block';
+            } else {
+                reasonTextarea.style.display = 'none';
+            }
         }
-    }
-    s
+        $(document).ready(function() {
+            if (window.File && window.FileList && window.FileReader) {
+                $("#files").on("change", function(e) {
+                    var files = e.target.files,
+                        filesLength = files.length;
+                    for (var i = 0; i < filesLength; i++) {
+                        var f = files[i];
+                        var fileReader = new FileReader();
+                        fileReader.onload = (function(e) {
+                            var file = e.target;
+                            $("<span class=\"pip\">" +
+                                "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                                "<span class=\"remove\">X</span>" +
+                                "</span>").insertAfter("#files");
+
+                            $(".remove").click(function() {
+                                $(this).parent(".pip").remove();
+                                $('#files').val("");
+                            });
+
+                        });
+                        fileReader.readAsDataURL(f);
+                    }
+                });
+            } else {
+                alert("Your browser doesn't support the File API");
+            }
+        });
+
+        var myInput = document.getElementById('myFileInput');
     </script>
 
 
 </body>
 
-<!-- Mirrored from aiui-admin.wordpressthemeshub.com/main/fullscreen.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Jan 2024 11:41:45 GMT -->
 
 </html>

@@ -680,7 +680,7 @@ a:active, a:focus, a:hover {
     height: auto;
     margin: 0 auto;
     display: block;
-    border: 5px solid rgba(56, 154, 240, .27);
+    border: none !important;
 }
 .user-panel>.info {
     padding: 5px;
